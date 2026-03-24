@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page { margin: 50px }
+        body { font-family: Arial, sans-serif; margin: 0px; }
+        .user { page-break-after: always; margin-bottom: 50px; }
+        h1, h2, h3 { color: #333; }
+        p, li { line-height: 1.5; font-size: 16px; }
+        ul { margin-top: 0; }
+        ol { margin-top: 0; }
+        img { display: block; margin: 20px auto; height: 150px;}
+        a { text-decoration: none;}
+        .cadre { border: solid black; border-width: 2px; border-radius: 10px; padding: 10px;}
+        .identifiants { font-family: monospace;}
+        .center { text-align: center;}
+        .date { position: fixed; bottom: 10px; right: 10px; font-size: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="user">
+<h1 class="center">Identifiants numériques Grand'Est<br>Lycée Henri Loritz</h1>
+
+<p>Cet identifiant constitue <strong>la clé d'accès unique</strong> pour :</p>
+<ul>
+    <li>Les ordinateurs fixes du lycée</li>
+    <li>Le réseau WiFi de l'établissement</li>
+    <li>La suite Microsoft Office (Word, Excel, PowerPoint)</li>
+</ul>
+
+<div class="cadre">
+    <strong>Attention</strong> : ces identifiants ne sont pas ceux de Pronote, d'EduConnect ou de Mon Bureau Numérique.
+    Ils sont spécifiques aux services numériques fournis par la région Grand'Est.
+</div>
+
+<h2>Identifiants personnels</h2>
+
+<div class="cadre">
+    <p><strong>Utilisateur :</strong> $nom $prenom en classe $classe</p>
+    <ul>
+        <li><strong>Identifiant :</strong> <span class="identifiants">$identifiant</span></li>
+        <li><strong>Mot de passe :</strong> <span class="identifiants">$mot_de_passe</span></li>
+    </ul>
+</div>
+
+<p>Le mot de passe peut être personnalisé depuis :<br>
+<span class="identifiants"><a href="https://acl.numerique-educatif.fr">https://acl.numerique-educatif.fr</a></span>, rubrique <strong>Mon compte</strong>.</p>
+
+<h2>Utilisation des identifiants Grand'Est</h2>
+
+<p>Des informations sur l'utilisation des ces identifiants, la connexion au réseau WiFi, l'activation de la licence Microsoft Office et bien d'autres informations complémentaires sont disponibles via le lien suivant :</p>
+
+<div class="center">
+    <span class="identifiants"><a href="https://sh.loritz.fr/IJYE2">https://sh.loritz.fr/IJYE2</a></span>
+    <br>
+    <img src="file://$image_path">
+</div>
+
+<div class="date">
+    Généré le $date
+</div>
+
+
+</div>
+
+</body>
+</html>
