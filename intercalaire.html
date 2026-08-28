@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        html,
+        body {
+            width: 210mm;
+            height: 297mm;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+/*
+        .intercalaire {
+            width: 210mm;
+            height: 297mm;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            box-sizing: border-box;
+        }
+*/
+
+        .intercalaire {
+            width: 210mm;
+            height: 297mm;
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            box-sizing: border-box;
+            padding-top: 60mm;
+        }
+
+
+        .classe {
+            font-size: 64px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="intercalaire">
+        <div class="classe">
+            Classe $classe
+        </div>
+    </div>
+
+</body>
+
+</html>
