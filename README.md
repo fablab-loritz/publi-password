@@ -65,35 +65,9 @@ Le script convertit automatiquement les trois colonnes suivantes :
 
 Les autres colonnes présentes dans le CSV sont ignorées.
 
-## Templates HTML
-
-### `template-date.html`
-
-Template utilisé pour générer chaque fiche élève.
-
-Les variables suivantes peuvent être utilisées :
-
-```text
-$nom
-$prenom
-$classe
-$identifiant
-$mot_de_passe
-$image_path
-$date
-```
-
-### `intercalaire.html`
-
-Template utilisé pour générer l'intercalaire d'une classe.
-
-Variable disponible :
-
-```text
-$classe
-```
-
 ## Utilisation
+
+### Versions <= 8
 
 Une fois l'environnement virtuel activé :
 
@@ -106,22 +80,18 @@ Sous Linux, si le fichier est exécutable :
 ```bash
 ./publi-html-v8.py
 ```
+### Versions >= 9
 
-Le programme :
+Une fois l'environnement virtuel activé :
 
-1. charge les élèves depuis `Eleves.csv` ;
-2. vérifie les colonnes nécessaires ;
-3. trie les élèves par classe ;
-4. génère un intercalaire pour chaque classe ;
-5. génère une fiche PDF pour chaque élève ;
-6. fusionne tous les PDF ;
-7. produit le fichier `eleve.pdf` ;
-8. supprime les fichiers temporaires.
+```bash
+python publi-html-v9.py Eleves.csv eleves.pdf
+```
 
-Le résultat final se trouve dans :
+Sous Linux, si le fichier est exécutable :
 
-```text
-eleve.pdf
+```bash
+./publi-publi-html-v9.py Eleves.csv eleves.pdf
 ```
 
 ## Personnalisation
@@ -140,3 +110,32 @@ TMP_DIR = "tmp"
 ```
 
 Ils peuvent être modifiés pour adapter les noms de fichiers ou le dossier de sortie.
+
+
+### Templates HTML
+
+#### `template-date.html`
+
+Template utilisé pour générer chaque fiche élève.
+
+Les variables suivantes peuvent être utilisées :
+
+```text
+$nom
+$prenom
+$classe
+$identifiant
+$mot_de_passe
+$image_path
+$date
+```
+
+#### `intercalaire.html`
+
+Template utilisé pour générer l'intercalaire d'une classe.
+
+Variable disponible :
+
+```text
+$classe
+```
